@@ -1,7 +1,7 @@
 'use client'
+
 import { ReactNode } from 'react';
 import { SessionProvider } from "next-auth/react";
-
 
 function AuthProvider({ children }: { children: ReactNode }) {
   return (
@@ -10,6 +10,5 @@ function AuthProvider({ children }: { children: ReactNode }) {
     </SessionProvider>
   )
 }
-
 
 export default AuthProvider;

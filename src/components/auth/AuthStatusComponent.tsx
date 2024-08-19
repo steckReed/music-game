@@ -44,11 +44,13 @@ const AuthStatusComponent: React.FC<AuthStatusComponentProps> = ({ children }) =
   // Unauthenticated
   if (status === "unauthenticated") {
     return (<>
-      <h1>Uh Oh.</h1>
-      <h3>You are not signed in</h3>
-      <p> You will be redirected in 5s</p>
+      <div style={{ display:'flex', flexDirection:'column', alignItems:'center', margin:'auto' }}>
+        <h1>Uh Oh.</h1>
+        <h3>You are not signed in</h3>
+        <p> You will be redirected in 5s</p>
 
-      <button onClick={redirectToSignin}>Signin Now</button>
+        <button onClick={redirectToSignin}>Signin Now</button>
+      </div>
     </>);
   }
 

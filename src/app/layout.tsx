@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} style={{ display: 'flex', flexDirection: 'column', minWidth:'100vw', minHeight:'100vh' }}>
         <AuthProvider>
           {children}
         </AuthProvider>
