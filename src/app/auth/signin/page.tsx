@@ -29,7 +29,7 @@ const Page = () => {
           <h1>Cool Beans!</h1>
           <h3>You are signed in</h3>
           <p>You will be redirected in 3s</p>
-          <button onClick={() => signIn('spotify')}>Redirect Now</button>
+          <button onClick={redirectToHome}>Redirect Now</button>
         </>)
 
         :(<>
